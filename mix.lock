@@ -1,0 +1,5 @@
+%{
+  "alf": {:hex, :alf, "0.4.0", "e76c3de1820ead830caa017119db485c14b992402534313b1301194e7b62ce84", [:mix], [{:gen_stage, "~> 1.1", [hex: :gen_stage, repo: "hexpm", optional: false]}, {:telemetry, "~> 1.0", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "7da9bae3b608bcc3577d41c2353acc292c7d4be416a0a162d287e574f0c6d5d9"},
+  "gen_stage": {:hex, :gen_stage, "1.1.2", "b1656cd4ba431ed02c5656fe10cb5423820847113a07218da68eae5d6a260c23", [:mix], [], "hexpm", "9e39af23140f704e2b07a3e29d8f05fd21c2aaf4088ff43cb82be4b9e3148d02"},
+  "telemetry": {:hex, :telemetry, "1.0.0", "0f453a102cdf13d506b7c0ab158324c337c41f1cc7548f0bc0e130bbf0ae9452", [:rebar3], [], "hexpm", "73bc09fa59b4a0284efb4624335583c528e07ec9ae76aca96ea0673850aec57a"},
+}
