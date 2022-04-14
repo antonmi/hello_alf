@@ -7,12 +7,10 @@ defmodule HelloAlf.SimplePipeline do
   ]
 
   def add_one(event, _) do
-    Process.sleep(300)
     event + 1
   end
 
   def mult_two(event, _) do
-    Process.sleep(300)
     event * 2
   end
 end

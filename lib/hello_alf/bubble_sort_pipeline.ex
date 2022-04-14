@@ -15,22 +15,18 @@ defmodule HelloAlf.BubbleSortPipeline do
   ]
 
   def build_struct(list, _) do
-    Process.sleep(50)
     %__MODULE__{list: list, new_list: [], max: 0, ready: false}
   end
 
   def find_max(struct, _) do
-    Process.sleep(50)
     %{struct | max: Enum.max(struct.list)}
   end
 
   def update_new_list(struct, _) do
-    Process.sleep(50)
     %{struct | new_list: [struct.max | struct.new_list]}
   end
 
   def rebuild_list(struct, _) do
-    Process.sleep(50)
     %{struct | list: struct.list -- [struct.max]}
   end
 
