@@ -10,7 +10,8 @@ defmodule HelloAlf.Worker do
 
   @impl true
   def init(%__MODULE__{} = state) do
-    ALF.Manager.start(SimplePipeline)
+#    ALF.Manager.start(SimplePipeline, autoscaling_enabled: true)
+    ALF.Manager.start(SimplePipeline, autoscaling_enabled: false)
     ALF.Manager.start(BubbleSortPipeline)
 
     schedule_work()
@@ -20,11 +21,12 @@ defmodule HelloAlf.Worker do
 
   @impl true
   def handle_info(:work, state) do
+#    {:ok, pid} = Client.start(SimplePipeline)
+#    Client.call(pid, 1)
 
-    [1]
-    |> ALF.Manager.stream_to(SimplePipeline)
-    |> Enum.to_list()
-    |> IO.inspect
+    (1..20) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
+#    (1..5000) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
+#    |> IO.inspect
 
 
     [Enum.shuffle(1..10)]
@@ -43,6 +45,6 @@ defmodule HelloAlf.Worker do
   end
 
   defp schedule_work do
-    Process.send_after(self(), :work, 1000)
+    Process.send_after(self(), :work, 6666)
   end
 end

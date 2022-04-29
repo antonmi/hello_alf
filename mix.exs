@@ -20,8 +20,8 @@ defmodule HelloAlf.MixProject do
 
   defp deps do
     [
-#       {:alf, github: "antonmi/ALF", branch: "main"}
-       {:alf, path: "/Users/antonmi/elixir//ALF"}
+       {:alf, github: "antonmi/ALF", branch: "main"}
+#       {:alf, path: "/Users/anton.mishchukkloeckner.com/elixir/ALF"}
     ]
   end
 end
