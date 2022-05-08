@@ -24,8 +24,8 @@ defmodule HelloAlf.Worker do
 #    {:ok, pid} = Client.start(SimplePipeline)
 #    Client.call(pid, 1)
 
-    (1..20) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
-#    (1..5000) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
+#    (1..20) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
+    (1..500000) |> ALF.Manager.stream_to(HelloAlf.SimplePipeline) |> Enum.to_list()
 #    |> IO.inspect
 
 

@@ -3,8 +3,8 @@ defmodule HelloAlf.SimplePipeline do
 
   @components [
     stage(:do_nothing),
-    stage(:add_one, count: 10),
-    stage(:mult_two, count: 5)
+    stage(:add_one, count: 5),
+    stage(:mult_two, count: 10)
   ]
 
   def do_nothing(event, _), do: event
