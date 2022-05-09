@@ -1,5 +1,5 @@
 %{
-  "alf": {:git, "https://github.com/antonmi/ALF.git", "37062390f6dae701a24b734d738736b0cbdd8f4a", [branch: "main"]},
+  "alf": {:git, "https://github.com/antonmi/ALF.git", "9e428ed48aff6c2ad172c89566f42ac2a9c1abc7", [branch: "main"]},
   "gen_stage": {:hex, :gen_stage, "1.1.2", "b1656cd4ba431ed02c5656fe10cb5423820847113a07218da68eae5d6a260c23", [:mix], [], "hexpm", "9e39af23140f704e2b07a3e29d8f05fd21c2aaf4088ff43cb82be4b9e3148d02"},
   "telemetry": {:hex, :telemetry, "1.1.0", "a589817034a27eab11144ad24d5c0f9fab1f58173274b1e9bae7074af9cbee51", [:rebar3], [], "hexpm", "b727b2a1f75614774cff2d7565b64d0dfa5bd52ba517f16543e6fc7efcc0df48"},
 }
